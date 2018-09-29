@@ -85,7 +85,7 @@ namespace StudentGrades
         {
             if (bSubmitCountButtonClicked)
             {
-
+                Console.WriteLine("First Student btn clicked");
             }
         }
 
@@ -93,7 +93,7 @@ namespace StudentGrades
         {
             if (bSubmitCountButtonClicked)
             {
-
+                Console.WriteLine("Previous Student btn clicked");
             }
         }
 
@@ -101,28 +101,48 @@ namespace StudentGrades
         {
             if (bSubmitCountButtonClicked)
             {
-
+                Console.WriteLine("Next Student btn clicked");
             }
         }
 
         private void btnLastStudent_Click(object sender, RoutedEventArgs e)
         {
-
+            if (bSubmitCountButtonClicked)
+            {
+                Console.WriteLine("Last Student btn clicked");
+            }
         }
 
         private void btnSaveScore_Click(object sender, RoutedEventArgs e)
         {
-
+            if (bSubmitCountButtonClicked)
+            {
+                Console.WriteLine("Save Score btn clicked");
+            }
         }
 
         private void btnSaveName_Click(object sender, RoutedEventArgs e)
         {
-
+            if (bSubmitCountButtonClicked)
+            {
+                Console.WriteLine("Save Name btn clicked");
+            }
         }
 
         private void btnDisplayScores_Click(object sender, RoutedEventArgs e)
         {
+            if (bSubmitCountButtonClicked)
+            {
+                Console.WriteLine("Display scores btn clicked");
+            }
+        }
 
+        private void btnResetScores_Click(object sender, RoutedEventArgs e)
+        {
+            if (bSubmitCountButtonClicked)
+            {
+                Console.WriteLine("Reset scores btn clicked");
+            }
         }
     }
 }
