@@ -208,6 +208,7 @@ namespace StudentGrades
         internal System.Windows.Controls.TextBox tbxEnterAssignmentNum;
         internal System.Windows.Controls.TextBox tbxAssignmentScore;
         internal System.Windows.Controls.Button btnSaveScore;
+        internal System.Windows.Controls.Button btnDisplayScores;
     }
 }
 

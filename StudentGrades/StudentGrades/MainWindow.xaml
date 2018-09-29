@@ -28,7 +28,7 @@
             <Grid HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="472">
                 <Label x:Name="lblStudentName" Content="Student #1" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>
                 <TextBox x:Name="tbxStudentName" HorizontalAlignment="Left" Height="23" Margin="90,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="265"/>
-                <Button x:Name="btnSaveName" Content="Save Name" HorizontalAlignment="Left" Margin="368,9,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btnSaveName" Content="Save Name" HorizontalAlignment="Left" Margin="368,9,0,0" VerticalAlignment="Top" Width="75" Click="btnSaveName_Click"/>
             </Grid>
         </GroupBox>
         <GroupBox x:Name="StudentInfo2" Header="Student Info" HorizontalAlignment="Left" Height="121" Margin="48,263,0,0" VerticalAlignment="Top" Width="489">
@@ -37,7 +37,7 @@
                 <Label x:Name="lblAssignmentScore" Content="Assignment Score:" HorizontalAlignment="Left" Margin="112,55,0,0" VerticalAlignment="Top" Width="112"/>
                 <TextBox x:Name="tbxEnterAssignmentNum" HorizontalAlignment="Left" Height="23" Margin="228,27,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                 <TextBox x:Name="tbxAssignmentScore" HorizontalAlignment="Left" Height="23" Margin="229,55,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                <Button x:Name="btnSaveScore" Content="Save Score" HorizontalAlignment="Left" Margin="383,40,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btnSaveScore" Content="Save Score" HorizontalAlignment="Left" Margin="383,40,0,0" VerticalAlignment="Top" Width="75" Click="btnSaveScore_Click"/>
             </Grid>
         </GroupBox>
         <Grid HorizontalAlignment="Left" Height="100" Margin="422,17,0,0" VerticalAlignment="Top" Width="212">
@@ -48,6 +48,9 @@
         </Grid>
         <Grid HorizontalAlignment="Left" Height="24" Margin="70,10,0,0" VerticalAlignment="Top" Width="352">
             <Label x:Name="lblErrorMessage" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.461,0.808" Height="24" Width="342"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="36" Margin="183,389,0,0" VerticalAlignment="Top" Width="162">
+            <Button x:Name="btnDisplayScores" Content="Display Scores" HorizontalAlignment="Left" Margin="39,0,0,0" VerticalAlignment="Top" Width="87" Height="26" Click="btnDisplayScores_Click"/>
         </Grid>
 
 

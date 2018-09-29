@@ -119,5 +119,10 @@ namespace StudentGrades
         {
 
         }
+
+        private void btnDisplayScores_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
