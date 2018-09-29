@@ -16,9 +16,30 @@
                 <Button x:Name="btnSubmitCounts" Width="92" Height="28" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="220,10,24,0" Content="Submit Counts" Click="btnSubmitCounts_Click"/>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="groupBox1" Header="GroupBox" HorizontalAlignment="Left" Height="68" Margin="48,117,0,0" VerticalAlignment="Top" Width="489"/>
-        <GroupBox x:Name="groupBox1_Copy" Header="GroupBox" HorizontalAlignment="Left" Height="68" Margin="48,190,0,0" VerticalAlignment="Top" Width="489"/>
-        <GroupBox x:Name="groupBox2" Header="GroupBox" HorizontalAlignment="Left" Height="121" Margin="48,263,0,0" VerticalAlignment="Top" Width="489"/>
+        <GroupBox x:Name="Navigate" Header="Navigate" HorizontalAlignment="Left" Height="68" Margin="48,117,0,0" VerticalAlignment="Top" Width="489">
+            <Grid HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="473" Margin="0,0,0,-3">
+                <Button x:Name="btnFirstStudent" Content="&lt;&lt; First Student" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="94" Click="btnFirstStudent_Click"/>
+                <Button x:Name="btnPrevStudent" Content="&lt; Previous Student" HorizontalAlignment="Left" Margin="122,10,0,0" VerticalAlignment="Top" Width="110" Click="btnPrevStudent_Click"/>
+                <Button x:Name="btnNextStudent" Content="&gt; Next Student" HorizontalAlignment="Left" Margin="249,10,0,0" VerticalAlignment="Top" Width="90" Click="btnNextStudent_Click"/>
+                <Button x:Name="btnLastStudent" Content="&gt;&gt; Last Student" HorizontalAlignment="Left" Margin="363,10,0,0" VerticalAlignment="Top" Width="100" Click="btnLastStudent_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="StudentInfo" Header="Student Info" HorizontalAlignment="Left" Height="68" Margin="48,190,0,0" VerticalAlignment="Top" Width="489">
+            <Grid HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="472">
+                <Label x:Name="lblStudentName" Content="Student #1" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="tbxStudentName" HorizontalAlignment="Left" Height="23" Margin="90,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="265"/>
+                <Button x:Name="btnSaveName" Content="Save Name" HorizontalAlignment="Left" Margin="368,9,0,0" VerticalAlignment="Top" Width="75"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="StudentInfo2" Header="Student Info" HorizontalAlignment="Left" Height="121" Margin="48,263,0,0" VerticalAlignment="Top" Width="489">
+            <Grid HorizontalAlignment="Left" Height="100" Margin="0,0,-2,-2" VerticalAlignment="Top" Width="479">
+                <Label x:Name="lblEnterAssignmentNum" Content="Enter Assignment Number (1-5):" HorizontalAlignment="Left" Margin="43,24,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="lblAssignmentScore" Content="Assignment Score:" HorizontalAlignment="Left" Margin="112,55,0,0" VerticalAlignment="Top" Width="112"/>
+                <TextBox x:Name="tbxEnterAssignmentNum" HorizontalAlignment="Left" Height="23" Margin="228,27,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="tbxAssignmentScore" HorizontalAlignment="Left" Height="23" Margin="229,55,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                <Button x:Name="btnSaveScore" Content="Save Score" HorizontalAlignment="Left" Margin="383,40,0,0" VerticalAlignment="Top" Width="75"/>
+            </Grid>
+        </GroupBox>
         <Grid HorizontalAlignment="Left" Height="100" Margin="422,17,0,0" VerticalAlignment="Top" Width="212">
             <Button x:Name="button" Content="Reset &#xD;&#xA;Scores" HorizontalAlignment="Left" Margin="48,24,0,0" VerticalAlignment="Top" Width="93" Height="43"/>
         </Grid>

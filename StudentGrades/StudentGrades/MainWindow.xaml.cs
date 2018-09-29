@@ -22,27 +22,28 @@ namespace StudentGrades
     {
         public string[] AryStudents;
         public int[,] AryStudentGrades;
-        //public Array<string, int> AryStudentGrades;
         public int iStudentCount;
         public int iAssignmentCount;
+        bool bSubmitCountButtonClicked;
 
         public MainWindow()
         {
+            bSubmitCountButtonClicked = false;
             InitializeComponent();
         }
 
         private void btnSubmitCounts_Click(object sender, RoutedEventArgs e)
         {
-            
+            bSubmitCountButtonClicked = true;
             if ( ValidateCounts() )
             {
-                //init the student array and the grades array - student 1, student 2 grades 0.
                 SetCountValues(tbxNumOfStudents.Text, tbxNumOfAssignments.Text);
                 InitArrays(iStudentCount, iAssignmentCount);
             }
 
         }
 
+        #region Helper Methods
         public void SetCountValues(string stuCount, string asntCount)
         {
             Int32.TryParse(stuCount, out iStudentCount);
@@ -77,6 +78,46 @@ namespace StudentGrades
             //if good don't print error and return true
             // else print error message and return false
             return true;
+        }
+        #endregion
+
+        private void btnFirstStudent_Click(object sender, RoutedEventArgs e)
+        {
+            if (bSubmitCountButtonClicked)
+            {
+
+            }
+        }
+
+        private void btnPrevStudent_Click(object sender, RoutedEventArgs e)
+        {
+            if (bSubmitCountButtonClicked)
+            {
+
+            }
+        }
+
+        private void btnNextStudent_Click(object sender, RoutedEventArgs e)
+        {
+            if (bSubmitCountButtonClicked)
+            {
+
+            }
+        }
+
+        private void btnLastStudent_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSaveScore_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSaveName_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
