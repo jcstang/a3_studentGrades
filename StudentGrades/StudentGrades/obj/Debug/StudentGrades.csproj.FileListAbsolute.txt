@@ -1,0 +1,15 @@
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\bin\Debug\StudentGrades.exe.config
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\bin\Debug\StudentGrades.exe
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\bin\Debug\StudentGrades.pdb
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\StudentGrades.csprojAssemblyReference.cache
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\MainWindow.g.cs
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\App.g.cs
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\StudentGrades_MarkupCompile.cache
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\StudentGrades_MarkupCompile.lref
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\MainWindow.baml
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\StudentGrades.g.resources
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\StudentGrades.Properties.Resources.resources
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\StudentGrades.csproj.GenerateResource.cache
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\StudentGrades.csproj.CoreCompileInputs.cache
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\StudentGrades.exe
+\\Mac\iCloud\SCHOOL\iWSU_fall2018\cs-3280\assignments-git\a3_grades\StudentGrades\StudentGrades\obj\Debug\StudentGrades.pdb

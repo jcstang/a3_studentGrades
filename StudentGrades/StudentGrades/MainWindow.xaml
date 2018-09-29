@@ -11,9 +11,9 @@
             <Grid HorizontalAlignment="Left" Height="59" Margin="0,0,-2,-4" VerticalAlignment="Top" Width="336">
                 <Label x:Name="LblNumOfStudents" Content="Number of students:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,0,0,0"/>
                 <Label x:Name="LblNumOfAssignments" Content="Number of assignments:" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="tbxNumOfAssignments" HorizontalAlignment="Left" Height="21" Margin="139,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54"/>
-                <TextBox x:Name="tbxNumOfStudents" HorizontalAlignment="Left" Height="23" Margin="139,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" TextChanged="tbxNumOfStudents_TextChanged"/>
-                <Button x:Name="btnSubmitCounts" Width="92" Height="28" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="210,10,34,0" Content="Submit Counts"/>
+                <TextBox x:Name="tbxNumOfAssignments" HorizontalAlignment="Left" Height="21" Margin="139,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" MaxLength="22"/>
+                <TextBox x:Name="tbxNumOfStudents" HorizontalAlignment="Left" Height="23" Margin="139,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" MaxLength="2" MinLines="13"/>
+                <Button x:Name="btnSubmitCounts" Width="92" Height="28" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="220,10,24,0" Content="Submit Counts" Click="btnSubmitCounts_Click"/>
             </Grid>
         </GroupBox>
         <GroupBox x:Name="groupBox1" Header="GroupBox" HorizontalAlignment="Left" Height="68" Margin="48,117,0,0" VerticalAlignment="Top" Width="489"/>
@@ -24,6 +24,9 @@
         </Grid>
         <Grid HorizontalAlignment="Left" Height="221" Margin="48,430,0,0" VerticalAlignment="Top" Width="489">
             <TextBox x:Name="tbxPrintedResults" HorizontalAlignment="Left" Height="221" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="489"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="24" Margin="70,10,0,0" VerticalAlignment="Top" Width="352">
+            <Label x:Name="lblErrorMessage" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.461,0.808" Height="24" Width="342"/>
         </Grid>
 
 

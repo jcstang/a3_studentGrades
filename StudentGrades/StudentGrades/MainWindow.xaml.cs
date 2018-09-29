@@ -20,14 +20,30 @@ namespace StudentGrades
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string[] Students;
+        public string[,] StudentGrades;
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void tbxNumOfStudents_TextChanged(object sender, TextChangedEventArgs e)
+        private void btnSubmitCounts_Click(object sender, RoutedEventArgs e)
         {
+            
+            if ( ValidateCounts() )
+            {
+                //init the student array and the grades array - student 1, student 2 grades 0.
+            }
 
+        }
+
+        //helper methods
+        public bool ValidateCounts()
+        {
+            //if good don't print error and return true
+            // else print error message and return false
+            return false;
         }
     }
 }
