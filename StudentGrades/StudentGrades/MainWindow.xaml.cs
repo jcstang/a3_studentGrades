@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace StudentGrades
 {
@@ -40,8 +28,11 @@ namespace StudentGrades
             if ( ValidateCounts(tbxNumOfStudents.Text, tbxNumOfAssignments.Text) )
             {
                 //SetCountValues(tbxNumOfStudents.Text, tbxNumOfAssignments.Text);
-
                 InitArrays(iStudentCount, iAssignmentCount);
+            } else
+            {
+                //TODO: print error message on the label
+                PrintErrorMessage();
             }
 
         }
@@ -114,6 +105,15 @@ namespace StudentGrades
 
 
         #region Helper Methods
+
+
+
+        public void PrintErrorMessage()
+        {
+            //TODO: print message
+            lblErrorMessage.Content = "ERROR: Students can only be (1-10), Assignments only (1-99)";
+        }
+
         public bool ValidateCounts(string stuCount, string asntCount)
         {
             //TODO: validate
