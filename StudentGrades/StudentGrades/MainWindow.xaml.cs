@@ -32,54 +32,19 @@ namespace StudentGrades
             InitializeComponent();
         }
 
+        #region Button Clicks
+
         private void btnSubmitCounts_Click(object sender, RoutedEventArgs e)
         {
             bSubmitCountButtonClicked = true;
-            if ( ValidateCounts() )
+            if ( ValidateCounts(tbxNumOfStudents.Text, tbxNumOfAssignments.Text) )
             {
-                SetCountValues(tbxNumOfStudents.Text, tbxNumOfAssignments.Text);
+                //SetCountValues(tbxNumOfStudents.Text, tbxNumOfAssignments.Text);
+
                 InitArrays(iStudentCount, iAssignmentCount);
             }
 
         }
-
-        #region Helper Methods
-        public void SetCountValues(string stuCount, string asntCount)
-        {
-            Int32.TryParse(stuCount, out iStudentCount);
-            Int32.TryParse(asntCount, out iAssignmentCount);
-
-        }
-
-        //helper methods
-        public void InitArrays(int iStuCount, int iAsntCount)
-        {
-            AryStudents = new string[iStuCount];
-            AryStudentGrades = new int[iStuCount, iAsntCount];
-
-            for (int i = 0; i < iStuCount; i++)
-            {
-                string sCount = "Student #" + (i+1).ToString();
-                AryStudents[i] = sCount;
-                Console.WriteLine("here is: " + AryStudents[i]);
-                for (int j = 0; j < iAsntCount; j++)
-                {
-                    AryStudentGrades[i, j] = 0;
-                    Console.Write("grades: " + AryStudentGrades[i, j] + " ");
-                }
-                Console.WriteLine();
-            }
-
-        }
-
-        public bool ValidateCounts()
-        {
-            //TODO: validate
-            //if good don't print error and return true
-            // else print error message and return false
-            return true;
-        }
-        #endregion
 
         private void btnFirstStudent_Click(object sender, RoutedEventArgs e)
         {
@@ -144,5 +109,47 @@ namespace StudentGrades
                 Console.WriteLine("Reset scores btn clicked");
             }
         }
+
+        #endregion
+
+
+        #region Helper Methods
+        public bool ValidateCounts(string stuCount, string asntCount)
+        {
+            //TODO: validate
+            bool retValStudents = false;
+            bool retValAssignments = false;
+
+            retValStudents = Int32.TryParse(stuCount, out iStudentCount);
+            retValAssignments = Int32.TryParse(asntCount, out iAssignmentCount);
+
+            return retValStudents && retValAssignments;
+        }
+
+        //helper methods
+        public void InitArrays(int iStuCount, int iAsntCount)
+        {
+            AryStudents = new string[iStuCount];
+            AryStudentGrades = new int[iStuCount, iAsntCount];
+
+            for (int i = 0; i < iStuCount; i++)
+            {
+                string sCount = "Student #" + (i+1).ToString();
+                AryStudents[i] = sCount;
+                Console.WriteLine("here is: " + AryStudents[i]);
+                for (int j = 0; j < iAsntCount; j++)
+                {
+                    AryStudentGrades[i, j] = 0;
+                    Console.Write("grades: " + AryStudentGrades[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+        }
+
+        
+        #endregion
+
+        
     }
 }
